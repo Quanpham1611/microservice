@@ -1,0 +1,91 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: TRACE
+          gateway.route.RouteDefinitionRouteLocator: INFO
+    root: INFO
+
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        -   id: discovery-server
+            filters:
+              - SetPath=/
+            predicates:
+              - Path=/eureka/web
+            uri: http://localhost:8761
+        -   id: discovery-server-static
+            predicates:
+              - Path=/eureka/**
+            uri: http://localhost:8761
+        -   id: catalog-service
+            filters:
+              - RewritePath=/api/v1/catalog/v3/api-docs, /v3/api-docs
+            predicates:
+              - Path=/api/v1/catalog/**
+            uri: lb://catalog-service
+        -   id: customer-service
+            filters:
+              - RewritePath=/api/v1/customers/v3/api-docs, /v3/api-docs
+            predicates:
+              - Path=/api/v1/customers/**
+            uri: lb://customer-service
+        -   id: auth-service
+            filters:
+              - RewritePath=/api/v1/auth/v3/api-docs, /v3/api-docs
+            predicates:
+              - Path=/api/v1/auth/**
+            uri: lb://auth-service
+        -   id: order-service
+            filters:
+              - RewritePath=/api/v1/orders/v3/api-docs, /v3/api-docs
+            predicates:
+              - Path=/api/v1/orders/**
+            uri: lb://order-service
+        -   id: image-service
+            filters:
+              - RewritePath=/api/v1/images/v3/api-docs, /v3/api-docs
+            predicates:
+              - Path=/api/v1/images/**
+            uri: lb://image-service
+        -   id: cart-service
+            filters:
+              - RewritePath=/api/v1/carts/v3/api-docs, /v3/api-docs
+            predicates:
+              - Path=/api/v1/carts/**
+            uri: lb://cart-management-service
+        -   id: openapi
+            filters:
+              - RewritePath=/v3/api-docs/(?<segment>.*), /${segment}/v3/api-docs
+            predicates:
+              - Path=/v3/api-docs/**
+            uri: http://localhost:${server.port}
+springdoc:
+  swagger-ui:
+    urls:
+      -   name: Catalog Service APIs
+          url: /v3/api-docs/api/v1/catalog
+      -   name: Customer Service APIs
+          url: /v3/api-docs/api/v1/customers
+      -   name: Auth Service APIs
+          url: /v3/api-docs/api/v1/auth
+      -   name: Order Service APIs
+          url: /v3/api-docs/api/v1/orders
+      -   name: Image Service APIs
+          url: /v3/api-docs/api/v1/images
+      -   name: Cart Management Service APIs
+          url: /v3/api-docs/api/v1/carts
