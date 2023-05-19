@@ -15,11 +15,12 @@ spring:
   application:
     name: catalog-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/ecommerce_catalog
-    username: postgres
-    password: 1234
-    driverClassName: org.postgresql.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/catalog-service
+    username: root
+    password: quanpham1
+    jpa:
+      hibernate:
+        ddl-auto: create
+      database: mysql
+      database-platform: org.hibernate.dialect.MySQLDialect

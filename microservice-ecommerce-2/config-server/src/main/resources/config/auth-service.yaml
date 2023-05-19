@@ -9,7 +9,6 @@ eureka:
 spring:
   application:
     name: auth-service
-
 jwt:
   secret:
     key: bxcxvcvxNsapkdvopasjvdpsakvd7GNnbgdsfgV5Dfvdsavdasjzvcxvcx90kFDS

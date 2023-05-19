@@ -16,6 +16,7 @@ logging:
     root: INFO
 
 
+
 spring:
   application:
     name: api-gateway

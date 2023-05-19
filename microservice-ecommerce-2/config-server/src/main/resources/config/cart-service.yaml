@@ -13,13 +13,14 @@ logging:
 
 spring:
   application:
-    name: cart-management-service
+    name: cart-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/ecommerce_cart
-    username: postgres
-    password: 1234
-    driverClassName: org.postgresql.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cart-service
+    username: root
+    password: quanpham1
+    jpa:
+      hibernate:
+        ddl-auto: create
+      database: mysql
+      database-platform: org.hibernate.dialect.MySQLDialect
