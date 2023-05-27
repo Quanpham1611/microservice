@@ -16,6 +16,7 @@
         <module>auth-service</module>
         <module>customer-service</module>
         <module>cart-service</module>
+        <module>order-service</module>
     </modules>
 
     <properties>
