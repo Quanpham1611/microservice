@@ -17,6 +17,7 @@
         <module>customer-service</module>
         <module>cart-service</module>
         <module>order-service</module>
+        <module>catalog-service</module>
     </modules>
 
     <properties>
