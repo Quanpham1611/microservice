@@ -11,6 +11,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/commons">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/config-server">
       <ProjectState />
     </projectState>
@@ -30,6 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,26 +60,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/Dell/IdeaProjects/microservice-ecommerce-2/config-server/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;OverrideImplement.combined&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/IdeaProjects/microservice-ecommerce-2/config-server/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gant&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c9f555c668bc338b1da6ed34c315f8a0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="quan.catalogservice.entity" />
+      <recent name="com.example.cartservice.entity" />
+      <recent name="quan.customerservice.entity" />
+      <recent name="quan.customerservice.validation" />
+      <recent name="quan.common.dto.cart" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="quan.common.configuration" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CustomerServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="quan.apigateway.ApiGatewayApplication" />
@@ -81,9 +110,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="config-server.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="quan.configserver.ConfigServerApplication" />
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="quan.authservice.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cart-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cartservice.CartServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CatalogServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="catalog-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="quan.catalogservice.CatalogServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="quan.common.CommonApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,16 +145,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="customer-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="quan.customerservice.CustomerServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoeryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="discoery-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="quan.discoeryserver.DiscoeryServerApplication" />
+    <configuration name="DiscoveryserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discoveryserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="quan.discoveryserver.DiscoveryserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="image-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="quan.imageservice.ImageServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.orderservice.OrderServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,7 +183,24 @@
       <option name="presentableId" value="Default" />
       <updated>1684223745012</updated>
       <workItem from="1684223745538" duration="685000" />
-      <workItem from="1684307736138" duration="5653000" />
+      <workItem from="1684307736138" duration="7627000" />
+      <workItem from="1684315820124" duration="446000" />
+      <workItem from="1684393754055" duration="9735000" />
+      <workItem from="1684474523130" duration="2714000" />
+      <workItem from="1684478168914" duration="11297000" />
+      <workItem from="1684495138757" duration="307000" />
+      <workItem from="1684631920672" duration="531000" />
+      <workItem from="1684632497344" duration="11577000" />
+      <workItem from="1684717082866" duration="5969000" />
+      <workItem from="1684818280190" duration="111000" />
+      <workItem from="1684932223849" duration="142000" />
+      <workItem from="1684990668844" duration="32000" />
+      <workItem from="1685089206013" duration="247000" />
+      <workItem from="1685101495212" duration="1046000" />
+      <workItem from="1685145621180" duration="8000" />
+      <workItem from="1685150370145" duration="8735000" />
+      <workItem from="1685169438935" duration="5146000" />
+      <workItem from="1685261614774" duration="4914000" />
     </task>
     <servers />
   </component>

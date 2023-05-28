@@ -2,26 +2,54 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
         <module name="config-server" />
-        <module name="discoery-server" />
+        <module name="auth-service" />
+        <module name="cart-service" />
+        <module name="discovery-server" />
+        <module name="common" />
+        <module name="customer-service" />
+        <module name="catalog-service" />
+        <module name="api-gateway" />
+        <module name="discoveryserver" />
+        <module name="order-service" />
+        <module name="image-service" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.26/8f8cf0372abf564913e9796623aac4c8ea44025a/lombok-1.18.26.jar" />
+        </processorPath>
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="commons" target="17" />
+      <module name="commons.main" target="17" />
+      <module name="commons.test" target="17" />
+      <module name="config-server.main" target="17" />
+      <module name="config-server.test" target="17" />
       <module name="demo" target="17" />
-      <module name="discovery-server" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
+      <module name="cart-service" options="-parameters" />
+      <module name="catalog-service" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="commons" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
       <module name="demo" options="-parameters" />
-      <module name="discoery-server" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="discoveryserver" options="-parameters" />
+      <module name="image-service" options="-parameters" />
+      <module name="order-service" options="-parameters" />
     </option>
   </component>
 </project>

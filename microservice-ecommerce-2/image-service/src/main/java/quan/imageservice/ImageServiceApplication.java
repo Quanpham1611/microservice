@@ -1,4 +1,4 @@
-package quan.customerservice;
+package quan.imageservice;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
@@ -12,13 +12,13 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableDiscoveryClient
 @EnableFeignClients
 @OpenAPIDefinition(
-        servers = { @Server(url = "http://localhost:8080")},
-        info = @Info(title = "Customer API", version = "1.0.0", description = "API for managing customers")
+		servers = {@Server(url = "http://localhost:8080")},
+		info = @Info(title = "Image API", version = "1.0.0", description = "API for upload photos")
 )
-public class CustomerServiceApplication {
+public class ImageServiceApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(CustomerServiceApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(ImageServiceApplication.class, args);
+	}
 
 }

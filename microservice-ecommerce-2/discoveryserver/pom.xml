@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.6</version>
+        <version>3.0.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>quan</groupId>
-    <artifactId>discoery-server</artifactId>
+    <artifactId>discoveryserver</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>discoery-server</name>
-    <description>discoery-server</description>
+    <name>discoveryserver</name>
+    <description>discoveryserver</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>

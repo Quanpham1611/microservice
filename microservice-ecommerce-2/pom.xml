@@ -18,6 +18,7 @@
         <module>cart-service</module>
         <module>order-service</module>
         <module>catalog-service</module>
+        <module>image-service</module>
     </modules>
 
     <properties>
